@@ -1,0 +1,6 @@
+﻿task_id,task_type,input_text,expected_category
+T001,classification,This product is excellent and works perfectly!,positive
+T002,classification,Terrible quality and poor customer service.,negative
+T003,qna,What is the API rate limit?,technical
+T004,extraction,"Acme Corp released Product Y on March 15, 2024 priced at .",product_launch
+T005,summarization,"Our Q4 results exceeded expectations with 25% revenue growth.",financial_summary

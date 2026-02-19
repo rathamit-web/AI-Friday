@@ -1,0 +1,68 @@
+# Environment
+.env
+.env.local
+.env*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+output/app.log
+
+# Vector DB
+output/chroma_db/
+output/artifacts/
+
+# Results (keep samples)
+output/results*.json
+output/results*.csv
+output/metrics*.json
+
+# Temporary
+*.tmp
+*.bak
+*.backup
+.temp/
+tmp/
+
+# OS
+Thumbs.db
+.DS_Store

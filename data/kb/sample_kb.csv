@@ -1,0 +1,6 @@
+﻿id,category,title,description,tags
+KB001,Policy,Data Retention Policy,"All customer data must be retained for 7 years as per regulatory compliance.","compliance,data,policy"
+KB002,Runbook,Database Backup Procedure,"Daily backups run at 2 AM UTC. Full backup on Sunday, incremental on weekdays.","database,backup,operations"
+KB003,FAQ,How to reset user password,"Admin users can reset passwords via Admin Console.","user-management,password,faq"
+KB004,Technical,API Rate Limits,"REST API rate limit is 1000 requests per minute per API key.","api,rate-limit,technical"
+KB005,Incident,Production Outage - Jan 2024,"Root cause: Database connection pool exhaustion.","incident,database,postmortem"

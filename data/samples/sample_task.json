@@ -1,0 +1,6 @@
+{
+  "task_id": "SAMPLE_001",
+  "task_type": "generic_extraction",
+  "input": "Apple Inc. announced record quarterly earnings of $120 billion for Q4 2024. The company released three new products: iPhone 16, iPad Pro with M3, and Apple Vision Pro 2. CEO Tim Cook stated the company will invest $50 billion in AI research.",
+  "expected_entities": ["organization", "money", "product", "person", "date"]
+}

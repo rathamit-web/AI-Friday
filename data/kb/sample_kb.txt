@@ -1,0 +1,24 @@
+This is a sample knowledge base in text format.
+
+## Security Best Practices
+Always validate user inputs before processing. Use parameterized queries to prevent SQL injection.
+Encrypt sensitive data at rest and in transit. Implement rate limiting on APIs.
+
+## Database Administration
+Regular backups are essential. Full backups run every Sunday. Incremental backups run daily.
+Database maintenance windows occur on Tuesday nights from 2-4 AM UTC.
+Keep indexes optimized for query performance.
+
+## Network Architecture
+Our infrastructure uses load balancers to distribute traffic. Traffic is routed through CDN for better performance.
+All data centers are in compliance with SOC 2 standards.
+
+## Incident Response
+For security incidents, contact the incident response team immediately.
+Post-incident reviews should be completed within 48 hours of resolution.
+All incidents must be documented in the incident tracking system.
+
+## API Documentation
+Rate limits: 1000 requests per minute for standard tier, 10000 for enterprise.
+Authentication uses OAuth 2.0. All API responses are in JSON format.
+Deprecation warnings are provided 6 months before endpoint removal.
