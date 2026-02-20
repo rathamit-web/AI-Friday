@@ -1,0 +1,2773 @@
+REVISED: Ultimate AI Hackathon Execution Plan with GitHub Copilot
+📋 PRE-HACKATHON SETUP (Do this NOW)
+1. Create your project structure:
+bash
+mkdir ai-hackathon
+cd ai-hackathon
+mkdir data src notebooks tests demo presentation
+touch README.md requirements.txt .env
+code .
+2. Initialize Git:
+bash
+git init
+git add .
+git commit -m "Initial project structure"
+3. Create EXECUTION_TRACKER.md:
+Markdown
+# AI Hackathon Execution Tracker
+
+## ⏱️ Time Checkpoints
+- [ ] 00:00 - Use case received
+- [ ] 00:10 - Problem analysis complete (Prompt 1)
+- [ ] 00:20 - Tech stack decided (Prompt 2)
+- [ ] 00:30 - Data structure designed (Prompt 3)
+- [ ] 01:00 - Sample data generated (Prompt 4)
+- [ ] 01:30 - Pipeline architecture ready (Prompt 5)
+- [ ] 02:00 - Core RAG working (Prompts 6-11)
+- [ ] 02:30 - UI functional (Prompt 12)
+- [ ] 03:00 - Differentiator added (Prompt 13)
+- [ ] 03:30 - Testing complete (Prompt 14)
+- [ ] 03:50 - Demo rehearsed (Prompt 15)
+- [ ] 04:00 - SHOWTIME! 🎤
+
+## 🎯 My Differentiation Strategy
+[To be filled after Prompt 1]
+
+## ✅ Validation Checklist
+- [ ] Demo questions tested 5 times
+- [ ] No errors in UI
+- [ ] Sources displaying correctly
+- [ ] Backup screenshots taken
+🚀 STEP-BY-STEP EXECUTION PLAN
+PHASE 1: STRATEGIC PLANNING (Minutes 0-30)
+⭐ PROMPT 1: Industry-Contextualized Problem Analysis
+When you receive the use case, open GitHub Copilot Chat and paste this EXACT prompt:
+
+Code
+I'm participating in a 4-hour AI hackathon. Here is the use case announcement:
+
+"""
+[PASTE THE COMPLETE USE CASE HERE - EVERY WORD]
+"""
+
+Provide a comprehensive strategic analysis in this EXACT structure:
+
+---
+
+## 1. CORE PROBLEM SUMMARY
+Write 2-3 sentences that capture the essence of what problem we're solving.
+
+---
+
+## 2. INDUSTRY CONTEXT & TARGET USERS
+
+### Industry Domain:
+[Which industry: Healthcare, E-commerce, Finance, Education, Customer Service, Legal, etc.]
+
+### Why This Industry Needs This Solution:
+[Industry-specific challenges that make this problem critical]
+
+### Target Users:
+Identify 2-3 specific user personas:
+
+**Primary User:** [Title/Role]
+- Daily challenges: [3 specific pain points]
+- Current workflow: [How they handle this today]
+- Success criteria: [What would make their day better]
+
+**Secondary User:** [Title/Role]  
+- Daily challenges: [3 specific pain points]
+- Current workflow: [How they handle this today]
+- Success criteria: [What would make their day better]
+
+---
+
+## 3. PROBLEM STATEMENT & SOLUTION GOAL
+
+### Current Solution Limitations:
+1. [Limitation 1 - be specific]
+2. [Limitation 2 - be specific]  
+3. [Limitation 3 - be specific]
+4. [Why existing solutions fail - root cause]
+
+### Our AI Solution Goal:
+**What we will build:** [One clear sentence]
+
+**How AI/RAG solves it:** [Explain why RAG is the perfect approach for THIS specific problem]
+
+**Success metrics:** [How we'll measure if we succeeded]
+
+---
+
+## 4. KEY REQUIREMENTS (Must-Have Features)
+
+### Functional Requirements:
+- [ ] [Core feature 1 - with specific acceptance criteria]
+- [ ] [Core feature 2 - with specific acceptance criteria]
+- [ ] [Core feature 3 - with specific acceptance criteria]
+- [ ] [Core feature 4 - with specific acceptance criteria]
+
+### Technical Requirements:
+- [ ] [Technical capability 1]
+- [ ] [Technical capability 2]
+- [ ] [Technical capability 3]
+
+### User Experience Requirements:
+- [ ] [UX requirement 1]
+- [ ] [UX requirement 2]
+
+---
+
+## 5. DATA INPUT & OUTPUT SPECIFICATION
+
+### INPUT DATA STRUCTURE:
+
+**Knowledge Base Content:**
+- Type of documents: [e.g., product manuals, FAQs, medical records, legal documents, etc.]
+- Document format: [Structured/Unstructured, JSON/PDF/Text]
+- Approximate volume: [How many documents needed to be realistic]
+- Metadata required: [What metadata makes sense for this domain]
+
+**Example Input Document Schema:**
+```json
+{
+  "id": "...",
+  "field1": "...",
+  "field2": "...",
+  // [Complete this based on use case]
+}
+User Query Input:
+
+Query type: [Questions, Commands, Searches, etc.]
+Query complexity: [Simple factual, Multi-step reasoning, Comparisons, etc.]
+Expected query length: [Short/Medium/Long]
+Example User Queries:
+
+[Simple query example]
+[Complex query example]
+[Edge case query example]
+OUTPUT DATA STRUCTURE:
+Response Format:
+
+JSON
+{
+  "answer": "...",
+  "sources": [
+    {
+      "id": "...",
+      "title": "...",
+      "excerpt": "...",
+      "relevance_score": 0.0,
+      "url_or_reference": "..."
+    }
+  ],
+  "confidence_score": 0.0,
+  "metadata": {
+    // [What additional info helps users]
+  }
+}
+Response Characteristics:
+
+Tone: [Professional/Friendly/Technical/etc.]
+Length: [Concise/Detailed/Varies by query]
+Format: [Bullet points/Paragraphs/Structured]
+Citations: [How sources should be presented]
+Example Output for Sample Query: [Show a complete example response]
+
+6. DIFFERENTIATION OPPORTUNITIES
+Based on this use case, here are 3 ways to stand out (ranked by impact vs. effort):
+
+Option 1: [Name of differentiator]
+
+What it is: [Description]
+Why it matters for THIS use case: [Specific value]
+Implementation complexity: [Low/Medium/High]
+Demo wow factor: [Low/Medium/High]
+Option 2: [Name of differentiator]
+
+What it is: [Description]
+Why it matters for THIS use case: [Specific value]
+Implementation complexity: [Low/Medium/High]
+Demo wow factor: [Low/Medium/High]
+Option 3: [Name of differentiator]
+
+What it is: [Description]
+Why it matters for THIS use case: [Specific value]
+Implementation complexity: [Low/Medium/High]
+Demo wow factor: [Low/Medium/High]
+RECOMMENDATION: [Which option to pursue and why]
+
+7. DEMO NARRATIVE STRUCTURE
+Opening Hook (10 sec): "[Compelling statement about the problem]"
+
+Problem Illustration (20 sec): "[Specific example of user pain]"
+
+Solution Introduction (15 sec): "[How our AI solution addresses this]"
+
+Live Demo Setup (15 sec): "[Context for what we'll demonstrate]"
+
+Demo Questions (90 sec):
+
+Question 1: [Easy win - shows it works]
+Question 2: [Complex scenario - shows intelligence]
+Question 3: [Unique feature - shows differentiation]
+Technical Highlight (20 sec): "[One technical choice that makes this special]"
+
+Impact Statement (10 sec): "[How this changes the user's world]"
+
+Format this analysis as a clean, structured markdown document that I can reference throughout the hackathon.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 1:**
+1. **Read the entire output carefully**
+2. **Copy the analysis to a file:** `analysis/problem_analysis.md`
+3. **Make your differentiation choice** - pick ONE from the 3 options
+4. **Write it down** in EXECUTION_TRACKER.md
+5. **Set timer for 10 minutes** - you should be done with this by minute 10
+
+---
+
+### **⭐ PROMPT 2: Tech Stack Decision**
+
+**Copy this into Copilot Chat:**
+
+Based on this problem analysis:
+
+""" [PASTE THE "CORE PROBLEM SUMMARY" AND "INDUSTRY CONTEXT" FROM PROMPT 1] """
+
+Recommend the optimal tech stack for a 4-hour hackathon with these constraints:
+
+CONSTRAINTS:
+
+Total build time: 4 hours
+Must have working demo
+Free tier / open source preferred
+Easy to set up and debug
+Reliable (no experimental tools)
+REQUIREMENTS:
+
+Handle [NUMBER] documents from Prompt 1 analysis
+Support [QUERY TYPES] from Prompt 1
+Produce [OUTPUT FORMAT] from Prompt 1
+Provide recommendations in this structure:
+
+1. VECTOR DATABASE
+Recommended: [Name]
+
+Why this choice:
+
+[Reason 1 - setup time]
+[Reason 2 - reliability]
+[Reason 3 - features needed]
+Setup complexity: [1-5 scale] Free tier limits: [Specify]
+
+Alternative if issues: [Backup option]
+
+2. EMBEDDING MODEL
+Recommended: [Name]
+
+Why this choice:
+
+[Reason 1 - quality]
+[Reason 2 - speed]
+[Reason 3 - cost]
+Specs:
+
+Dimensions: [Number]
+Max token length: [Number]
+API/Local: [Which]
+Alternative if issues: [Backup option]
+
+3. LLM (Large Language Model)
+Recommended: [Name]
+
+Why this choice:
+
+[Reason 1 - response quality]
+[Reason 2 - cost/speed balance]
+[Reason 3 - context window]
+Configuration:
+
+Context window: [Size]
+Temperature: [Recommended value]
+Max tokens: [Recommended value]
+Alternative if issues: [Backup option]
+
+4. RAG FRAMEWORK
+Recommended: [LangChain / LlamaIndex / Custom]
+
+Why this choice:
+
+[Reason 1 - time to implement]
+[Reason 2 - flexibility]
+[Reason 3 - documentation]
+Key components we'll use:
+
+[Component 1]
+[Component 2]
+[Component 3]
+5. UI FRAMEWORK
+Recommended: [Streamlit / Gradio / Other]
+
+Why this choice:
+
+[Reason 1 - speed]
+[Reason 2 - appearance]
+[Reason 3 - features]
+Key features we'll implement:
+
+[Feature 1]
+[Feature 2]
+6. SUPPORTING LIBRARIES
+Data Processing:
+
+[Library] - for [purpose]
+[Library] - for [purpose]
+Utilities:
+
+[Library] - for [purpose]
+[Library] - for [purpose]
+7. COMPLETE requirements.txt
+Generate the complete requirements.txt with pinned versions:
+
+txt
+[FULL REQUIREMENTS.TXT CONTENT HERE]
+8. ENVIRONMENT VARIABLES (.env template)
+bash
+[COMPLETE .env TEMPLATE WITH ALL NEEDED API KEYS]
+9. QUICK START COMMANDS
+bash
+# Setup commands in order
+[STEP 1]
+[STEP 2]
+[STEP 3]
+[ETC.]
+10. RISK MITIGATION
+Potential Issues & Fixes:
+
+If [Component X] fails:
+
+Symptom: [What you'll see]
+Quick fix: [Exact steps]
+Fallback: [Alternative approach]
+If [Component Y] is slow:
+
+Symptom: [What you'll see]
+Quick fix: [Exact steps]
+Fallback: [Alternative approach]
+[Continue for each major component]
+
+Provide complete, copy-paste ready content.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 2:**
+1. **Copy requirements.txt** to root directory
+2. **Copy .env template** to `.env` and **fill in your API keys NOW**
+3. **Run setup commands:**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Windows: venv\Scripts\activate
+   pip install -r requirements.txt
+Verify installation - import key libraries in Python to confirm
+Commit to git:
+bash
+git add .
+git commit -m "Tech stack setup complete"
+Check time - you should be at minute 20
+⭐ PROMPT 3: Input/Output Data Structure Design
+Copy this into Copilot Chat:
+
+Code
+Based on the problem analysis from Prompt 1, design the complete data architecture.
+
+**Use Case Context:**
+[PASTE "INDUSTRY CONTEXT" and "DATA INPUT & OUTPUT SPECIFICATION" sections from Prompt 1]
+
+---
+
+Generate the following:
+
+## 1. KNOWLEDGE BASE DOCUMENT SCHEMA
+
+Create a detailed JSON schema for documents in our knowledge base:
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["FILL THIS"],
+  "properties": {
+    // [COMPLETE SCHEMA WITH ALL FIELDS, TYPES, DESCRIPTIONS]
+  }
+}
+Explanation of each field:
+
+field_name: [Why this field, what it contains, example value]
+[Continue for all fields]
+2. SAMPLE DOCUMENT EXAMPLES
+Provide 3 complete, realistic example documents:
+
+Example 1 - Simple Case:
+
+JSON
+{
+  // [COMPLETE REALISTIC DOCUMENT]
+}
+Example 2 - Complex Case:
+
+JSON
+{
+  // [COMPLETE REALISTIC DOCUMENT WITH MORE DETAIL]
+}
+Example 3 - Edge Case:
+
+JSON
+{
+  // [DOCUMENT THAT TESTS BOUNDARY CONDITIONS]
+}
+3. METADATA STRATEGY
+Metadata fields to include:
+
+Field	Type	Purpose	Example	Used For
+[field]	[type]	[why needed]	[example]	[filtering/ranking/display]
+Metadata extraction plan:
+
+[How to extract/generate each metadata field]
+4. USER QUERY STRUCTURE
+Query Input Schema:
+
+JSON
+{
+  "query": "string",
+  "filters": {
+    // [WHAT FILTERS MAKE SENSE FOR THIS USE CASE]
+  },
+  "options": {
+    // [WHAT OPTIONS: num_results, detail_level, etc.]
+  }
+}
+Query Categories for this use case:
+
+[Category 1 Name] (e.g., Factual Lookup)
+
+Characteristics: [What makes this query type unique]
+Example: [Specific example]
+Expected answer format: [How response should look]
+[Category 2 Name] (e.g., Comparison)
+
+Characteristics: [What makes this query type unique]
+Example: [Specific example]
+Expected answer format: [How response should look]
+[Category 3 Name] (e.g., How-to/Process)
+
+Characteristics: [What makes this query type unique]
+Example: [Specific example]
+Expected answer format: [How response should look]
+[Add 2-3 more categories relevant to the use case]
+
+5. RESPONSE OUTPUT SCHEMA
+Complete Response Structure:
+
+TypeScript
+interface RAGResponse {
+  // [COMPLETE TYPESCRIPT INTERFACE WITH ALL FIELDS]
+}
+
+interface Source {
+  // [COMPLETE SOURCE OBJECT STRUCTURE]
+}
+
+interface Metadata {
+  // [COMPLETE METADATA STRUCTURE]
+}
+Response Examples for Each Query Category:
+
+Category 1 Response:
+
+JSON
+{
+  // [COMPLETE EXAMPLE RESPONSE]
+}
+Category 2 Response:
+
+JSON
+{
+  // [COMPLETE EXAMPLE RESPONSE]
+}
+[Continue for all categories]
+
+6. DATA VALIDATION RULES
+Input Validation:
+
+Python
+# Document validation rules
+VALIDATION_RULES = {
+    "field_name": {
+        "type": "string",
+        "min_length": 10,
+        "max_length": 5000,
+        "required": True,
+        "validation_function": "validate_field_name"
+    },
+    # [COMPLETE FOR ALL FIELDS]
+}
+Quality Checks:
+
+ [Check 1 - with threshold]
+ [Check 2 - with threshold]
+ [Check 3 - with threshold]
+7. DATA FLOW DIAGRAM (Text Description)
+Describe the complete data flow:
+
+Code
+USER QUERY
+    ↓
+[Step 1: Query Processing]
+    ↓
+[Step 2: Retrieval]
+    ↓
+[Step 3: Re-ranking]
+    ↓
+[Step 4: Context Building]
+    ↓
+[Step 5: LLM Generation]
+    ↓
+[Step 6: Response Formatting]
+    ↓
+FORMATTED RESPONSE
+Detail each step:
+
+Step 1: [What happens, what data transforms]
+Step 2: [What happens, what data transforms]
+[Continue for all steps]
+8. FILE STRUCTURE FOR DATA
+Code
+data/
+├── raw/
+│   └── knowledge_base.json          # [Description]
+├── processed/
+│   ├── documents_cleaned.json       # [Description]
+│   └── document_chunks.json         # [Description]
+├── embeddings/
+│   └── document_embeddings.npy      # [Description]
+└── metadata/
+    ├── document_stats.json          # [Description]
+    └── validation_report.json       # [Description]
+Explain what goes in each file and when it's created.
+
+Create this as a comprehensive data architecture guide.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 3:**
+1. **Save the schemas** to `data/schemas/`
+2. **Create the folder structure** as specified
+3. **Review the query categories** - these will guide your sample data
+4. **Understand the data flow** - you'll implement this in the pipeline
+5. **Check time** - you should be at minute 30
+
+---
+
+## **PHASE 2: DATA CREATION (Minutes 30-60)**
+
+---
+
+### **⭐ PROMPT 4: Generate Realistic Sample Dataset**
+
+**Copy this into Copilot Chat:**
+
+Generate a comprehensive, realistic sample dataset for this use case.
+
+Context from previous analysis: [PASTE "INDUSTRY CONTEXT" from Prompt 1]
+
+Data schema to follow: [PASTE the JSON schema from Prompt 3]
+
+REQUIREMENTS:
+Generate 40-50 diverse documents that cover:
+
+Various categories/topics within the domain
+Different complexity levels (simple to complex)
+Different document lengths (short to detailed)
+Edge cases and special scenarios
+Common questions and rare questions
+Ensure realism:
+
+Use industry-specific terminology
+Include realistic dates, names, numbers
+Add proper formatting and structure
+Make content coherent and accurate to domain
+Coverage:
+
+Documents should support all query categories from Prompt 3
+Include overlapping information (to test retrieval ranking)
+Include unique information (to test specificity)
+Include contradictory information (to test conflict resolution)
+OUTPUT FORMAT:
+Provide the dataset as a valid JSON file:
+
+JSON
+{
+  "metadata": {
+    "total_documents": 50,
+    "domain": "[domain]",
+    "generated_date": "2026-02-20",
+    "version": "1.0"
+  },
+  "documents": [
+    {
+      // [COMPLETE DOCUMENT 1 - following schema]
+    },
+    {
+      // [COMPLETE DOCUMENT 2]
+    },
+    // [CONTINUE FOR ALL 40-50 DOCUMENTS]
+  ]
+}
+DOCUMENT DISTRIBUTION:
+Create documents in this distribution:
+
+By Complexity:
+
+40% Simple/Basic (straightforward information)
+40% Medium (moderate detail and structure)
+20% Complex (detailed, multi-faceted)
+By Length:
+
+30% Short (100-200 words)
+50% Medium (200-500 words)
+20% Long (500-1000 words)
+By Category: [Use categories from Prompt 3]
+
+[Category 1]: X documents
+[Category 2]: Y documents
+[Category 3]: Z documents
+[Continue for all categories]
+QUALITY REQUIREMENTS:
+Each document must:
+
+✅ Follow the exact schema from Prompt 3
+✅ Have all required fields populated
+✅ Contain realistic, domain-appropriate content
+✅ Include proper metadata
+✅ Be grammatically correct
+✅ Have unique ID
+✅ Be useful for answering user queries
+SPECIAL DOCUMENTS TO INCLUDE:
+Overlapping Content Test:
+
+2-3 documents with similar but not identical information
+Purpose: Test retrieval ranking
+Multi-hop Information:
+
+2-3 documents where answer requires combining information
+Purpose: Test complex reasoning
+Edge Cases:
+
+2-3 documents with unusual formats or edge scenarios
+Purpose: Test robustness
+Negative Cases:
+
+2-3 documents about what NOT to do or common mistakes
+Purpose: Test nuanced understanding
+Generate the complete dataset now. Output as valid, formatted JSON.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 4:**
+
+1. **Save output to:** `data/raw/knowledge_base.json`
+
+2. **Validate the JSON:**
+   ```bash
+   python -c "import json; json.load(open('data/raw/knowledge_base.json'))"
+Quick review:
+
+Open the file and skim 5-10 documents
+Check if they look realistic
+Verify schema compliance
+If data quality is poor, refine:
+
+Code
+Review the documents in data/raw/knowledge_base.json.
+
+Improve documents #5, #12, and #23 by:
+- Adding more specific details
+- Using more industry terminology
+- Making content more realistic
+
+Provide the complete improved versions.
+Commit to git:
+
+bash
+git add data/
+git commit -m "Sample dataset generated"
+Check time - you should be at minute 50-60
+
+⭐ PROMPT 5: Data Validation & Statistics
+Copy this into Copilot Chat:
+
+Code
+Create a data validation and statistics script.
+
+**Dataset location:** data/raw/knowledge_base.json
+
+**Schema to validate against:**
+[PASTE the JSON schema from Prompt 3]
+
+---
+
+Create: `src/data_validator.py`
+
+## REQUIREMENTS:
+
+### 1. Schema Validation
+- Check all required fields present
+- Verify data types match schema
+- Validate field value constraints (min/max length, allowed values, etc.)
+- Report any schema violations with document ID and field name
+
+### 2. Content Quality Checks
+- Check for empty/null values where not allowed
+- Detect duplicate IDs
+- Detect duplicate content (>90% similarity)
+- Identify documents that are too short or too long
+- Check for proper formatting
+
+### 3. Statistics Generation
+Calculate and display:
+- Total document count
+- Distribution by category
+- Distribution by length (word count)
+- Average content length
+- Metadata field coverage
+- Date range (if applicable)
+- Unique values in categorical fields
+
+### 4. Sample Display
+- Show 3 random documents (formatted nicely)
+- Display example from each category
+
+### 5. Validation Report
+Generate a report as: `data/metadata/validation_report.json`
+
+---
+
+## CODE STRUCTURE:
+
+```python
+"""
+Data Validation and Statistics Module
+
+Validates knowledge base against schema and generates quality metrics.
+"""
+
+import json
+from typing import Dict, List, Any
+from pathlib import Path
+from collections import Counter, defaultdict
+import logging
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+class DataValidator:
+    """Validates and analyzes knowledge base documents."""
+    
+    def __init__(self, data_path: str, schema_path: str = None):
+        """Initialize validator with data path."""
+        # [IMPLEMENTATION]
+    
+    def load_data(self) -> Dict[str, Any]:
+        """Load knowledge base from JSON."""
+        # [IMPLEMENTATION]
+    
+    def validate_schema(self) -> List[Dict[str, str]]:
+        """Validate all documents against schema."""
+        # [IMPLEMENTATION]
+    
+    def check_duplicates(self) -> List[Dict[str, Any]]:
+        """Check for duplicate IDs and content."""
+        # [IMPLEMENTATION]
+    
+    def generate_statistics(self) -> Dict[str, Any]:
+        """Generate comprehensive statistics."""
+        # [IMPLEMENTATION]
+    
+    def validate_content_quality(self) -> List[Dict[str, str]]:
+        """Check content quality issues."""
+        # [IMPLEMENTATION]
+    
+    def display_samples(self, n: int = 3):
+        """Display random sample documents."""
+        # [IMPLEMENTATION]
+    
+    def generate_report(self) -> Dict[str, Any]:
+        """Generate complete validation report."""
+        # [IMPLEMENTATION]
+    
+    def save_report(self, output_path: str):
+        """Save validation report to JSON."""
+        # [IMPLEMENTATION]
+    
+    def print_summary(self):
+        """Print human-readable summary to console."""
+        # [IMPLEMENTATION]
+
+def main():
+    """Run validation and generate report."""
+    validator = DataValidator('data/raw/knowledge_base.json')
+    
+    print("=" * 80)
+    print("DATA VALIDATION REPORT")
+    print("=" * 80)
+    
+    # [RUN ALL VALIDATIONS AND PRINT RESULTS]
+    
+    # Save report
+    validator.save_report('data/metadata/validation_report.json')
+    
+    print("\n✅ Validation complete!")
+
+if __name__ == "__main__":
+    main()
+Implement this complete script with:
+
+Comprehensive error handling
+Clear console output with colors/formatting
+Detailed logging
+Type hints throughout
+Docstrings for all methods
+Make the output visually clear so I can quickly assess data quality.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 5:**
+
+1. **Save the script** to `src/data_validator.py`
+
+2. **Run it:**
+   ```bash
+   python src/data_validator.py
+Review the output carefully:
+
+Any schema violations? Fix them in the dataset
+Any quality issues? Note them
+Statistics look good? Great!
+If issues found, fix the data - you might ask:
+
+Code
+The validation found these issues:
+[PASTE THE ERRORS]
+
+Provide corrected versions of the problematic documents.
+Check time - you should be at minute 60 (1 hour mark)
+
+Commit:
+
+bash
+git add .
+git commit -m "Data validation complete - dataset verified"
+PHASE 3: RAG PIPELINE ARCHITECTURE (Minutes 60-150)
+⭐ PROMPT 6: Complete Pipeline Architecture Design
+Copy this into Copilot Chat:
+
+Code
+Design the complete RAG pipeline architecture for this project.
+
+**Context:**
+- Use case: [PASTE "CORE PROBLEM SUMMARY" from Prompt 1]
+- Tech stack: [PASTE tech choices from Prompt 2]
+- Data structure: [PASTE key points from Prompt 3]
+- Differentiator: [YOUR CHOSEN DIFFERENTIATOR from Prompt 1]
+
+---
+
+## CREATE ARCHITECTURE DOCUMENTATION:
+
+### 1. HIGH-LEVEL ARCHITECTURE
+
+Describe the system in layers:
+
+┌─────────────────────────────────────┐ │ USER INTERFACE LAYER │ │ (Streamlit/Gradio Chat Interface) │ └─────────────────────────────────────┘ ↓ ↑ ┌─────────────────────────────────────┐ │ RAG ORCHESTRATION LAYER │ │ (RAGPipeline - main logic) │ └─────────────────────────────────────┘ ↓ ↓ ↓ ┌──────────┐ ┌──────────┐ ┌─────────┐ │ Retriever│ │ LLM │ │[DIFFER- │ │ │ │ Handler │ │ENTIATOR]│ └──────────┘ └──────────┘ └─────────┘ ↓ ┌─────────────────────────────────────┐ │ VECTOR STORE LAYER │ │ (Embeddings + Similarity Search) │ └─────────────────────────────────────┘ ↓ ┌─────────────────────────────────────┐ │ DATA LAYER │ │ (Knowledge Base + Metadata) │ └─────────────────────────────────────┘
+
+Code
+
+Explain each layer's responsibility.
+
+---
+
+### 2. MODULE BREAKDOWN
+
+Define the purpose and interface of each module:
+
+**src/config.py**
+- Purpose: [What it does]
+- Key configurations: [List all config parameters]
+- Dependencies: [What it imports]
+
+**src/data_loader.py**
+- Purpose: [What it does]
+- Key functions: [List main functions with signatures]
+- Dependencies: [What it imports]
+
+**src/document_processor.py**
+- Purpose: [What it does]
+- Key functions: [List main functions]
+- Dependencies: [What it imports]
+
+**src/embeddings.py**
+- Purpose: [What it does]
+- Key classes/functions: [List with signatures]
+- Dependencies: [What it imports]
+
+**src/vector_store.py**
+- Purpose: [What it does]
+- Key classes/functions: [List with signatures]
+- Dependencies: [What it imports]
+
+**src/retriever.py**
+- Purpose: [What it does]
+- Key classes/functions: [List with signatures]
+- Dependencies: [What it imports]
+
+**src/llm_handler.py**
+- Purpose: [What it does]
+- Key classes/functions: [List with signatures]
+- Dependencies: [What it imports]
+
+**src/rag_pipeline.py**
+- Purpose: [Main orchestrator]
+- Key classes/functions: [List with signatures]
+- Dependencies: [What it imports]
+
+**src/[differentiator_module].py**
+- Purpose: [Your unique feature implementation]
+- Key classes/functions: [List with signatures]
+- Dependencies: [What it imports]
+
+**src/utils.py**
+- Purpose: [Helper functions]
+- Key functions: [List]
+
+---
+
+### 3. DATA FLOW SEQUENCE
+
+Detail the complete flow from query to response:
+
+**INDEXING PHASE (Setup - runs once):**
+Step 1: Load documents from knowledge_base.json ↓ [data_loader.load_documents()] Step 2: Clean and validate documents ↓ [document_processor.clean()] Step 3: Chunk documents ↓ [document_processor.chunk()] Step 4: Generate embeddings ↓ [embeddings.generate_embeddings()] Step 5: Store in vector database ↓ [vector_store.add_documents()]
+
+Code
+
+**QUERY PHASE (Runs per user query):**
+Step 1: Receive user query ↓ [app.py receives input] Step 2: Preprocess query ↓ [retriever.preprocess_query()] Step 3: Generate query embedding ↓ [embeddings.embed_query()] Step 4: Search vector store ↓ [vector_store.similarity_search()] Step 5: Re-rank results ↓ [retriever.rerank()] Step 6: Build context from top results ↓ [retriever.build_context()] Step 7: [DIFFERENTIATOR STEP] ↓ [your_module.process()] Step 8: Generate LLM prompt ↓ [llm_handler.build_prompt()] Step 9: Call LLM ↓ [llm_handler.generate()] Step 10: Format response with citations ↓ [llm_handler.format_response()] Step 11: Return to UI ↓ [app.py displays]
+
+Code
+
+---
+
+### 4. KEY DESIGN DECISIONS
+
+Document important architectural choices:
+
+**Decision 1: Chunking Strategy**
+- Choice: [Specific approach]
+- Rationale: [Why this is best for our use case]
+- Parameters: [chunk_size=X, overlap=Y because...]
+
+**Decision 2: Embedding Approach**
+- Choice: [Specific model/method]
+- Rationale: [Why]
+- Trade-offs: [What we gain/lose]
+
+**Decision 3: Retrieval Strategy**
+- Choice: [Semantic / Hybrid / etc.]
+- Rationale: [Why]
+- Parameters: [top_k=X, threshold=Y]
+
+**Decision 4: Re-ranking**
+- Choice: [Method if any]
+- Rationale: [Why/why not]
+
+**Decision 5: [Your Differentiator]**
+- Choice: [Specific implementation approach]
+- Rationale: [Why this adds value]
+- Integration point: [Where in pipeline]
+
+**Decision 6: Prompt Engineering**
+- Choice: [Prompt structure]
+- Rationale: [Why this format]
+- Few-shot: [Yes/No and examples]
+
+---
+
+### 5. ERROR HANDLING STRATEGY
+
+Define how errors are handled:
+
+**Error Categories:**
+1. Data Loading Errors → [How to handle]
+2. Embedding Errors → [How to handle]
+3. Vector Store Errors → [How to handle]
+4. LLM API Errors → [How to handle]
+5. Empty Retrieval → [How to handle]
+6. Invalid User Input → [How to handle]
+
+**Fallback Mechanisms:**
+- If retrieval fails: [Fallback behavior]
+- If LLM fails: [Fallback behavior]
+- If confidence too low: [Fallback behavior]
+
+---
+
+### 6. PERFORMANCE CONSIDERATIONS
+
+**Optimization Strategies:**
+- Caching: [What to cache and where]
+- Batch Processing: [What to batch]
+- Async Operations: [What can be async]
+- Lazy Loading: [What to load on-demand]
+
+**Target Metrics:**
+- Query response time: < X seconds
+- Indexing time: < Y minutes
+- Memory usage: < Z MB
+
+---
+
+### 7. CONFIGURATION PARAMETERS
+
+List all configurable parameters:
+
+```python
+# config.py structure
+CONFIG = {
+    # Data
+    "data_path": "data/raw/knowledge_base.json",
+    "chunk_size": X,
+    "chunk_overlap": Y,
+    
+    # Embeddings
+    "embedding_model": "...",
+    "embedding_dimension": X,
+    
+    # Vector Store
+    "vector_store_type": "...",
+    "similarity_metric": "...",
+    
+    # Retrieval
+    "top_k": X,
+    "similarity_threshold": Y,
+    
+    # LLM
+    "llm_model": "...",
+    "temperature": X,
+    "max_tokens": Y,
+    
+    # [Differentiator configs]
+    "...",
+    
+    # UI
+    "app_title": "...",
+    "example_questions": [...]
+}
+Provide this as a comprehensive architecture guide document.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 6:**
+
+1. **Save to:** `docs/ARCHITECTURE.md`
+2. **Read through completely** - understand the flow
+3. **Create the module files** (empty for now):
+   ```bash
+   touch src/config.py src/data_loader.py src/document_processor.py src/embeddings.py src/vector_store.py src/retriever.py src/llm_handler.py src/rag_pipeline.py src/utils.py
+Check time - you should be around minute 70
+⭐ PROMPT 7: Implement Configuration Module
+Code
+Implement src/config.py based on the architecture from Prompt 6.
+
+**Tech stack:**
+[PASTE relevant tech choices from Prompt 2]
+
+**Architecture:**
+[PASTE configuration parameters section from Prompt 6]
+
+---
+
+Create a complete config.py with:
+
+1. **Environment Variable Loading**
+   - Load all API keys from .env
+   - Provide clear error messages if keys missing
+   - Support default values
+
+2. **All Configuration Parameters**
+   - Organized by category (data, embeddings, retrieval, llm, ui)
+   - Each parameter documented with comment
+   - Type hints for all values
+
+3. **Path Management**
+   - All file paths defined as Path objects
+   - Ensure directories exist or create them
+
+4. **Validation**
+   - Validate configuration on load
+   - Check file paths exist
+   - Verify numeric parameters in valid ranges
+
+5. **Export**
+   - Easy import: `from config import config`
+   - Print function to display current config
+
+---
+
+IMPLEMENTATION REQUIREMENTS:
+
+```python
+"""
+Configuration Module
+
+Central configuration for the RAG pipeline.
+All parameters, paths, and API keys are managed here.
+"""
+
+from pathlib import Path
+from typing import Dict, Any, List
+import os
+from dotenv import load_dotenv
+import logging
+
+# Load environment variables
+load_dotenv()
+
+# [COMPLETE IMPLEMENTATION]
+
+class Config:
+    """Configuration management for RAG pipeline."""
+    
+    def __init__(self):
+        """Initialize configuration with validation."""
+        # [IMPLEMENTATION]
+    
+    def validate(self) -> bool:
+        """Validate configuration parameters."""
+        # [IMPLEMENTATION]
+    
+    def print_config(self):
+        """Print current configuration (hide API keys)."""
+        # [IMPLEMENTATION]
+    
+    @property
+    def data_config(self) -> Dict[str, Any]:
+        """Data processing configuration."""
+        # [IMPLEMENTATION]
+    
+    @property
+    def embedding_config(self) -> Dict[str, Any]:
+        """Embedding configuration."""
+        # [IMPLEMENTATION]
+    
+    @property
+    def vector_store_config(self) -> Dict[str, Any]:
+        """Vector store configuration."""
+        # [IMPLEMENTATION]
+    
+    @property
+    def retrieval_config(self) -> Dict[str, Any]:
+        """Retrieval configuration."""
+        # [IMPLEMENTATION]
+    
+    @property
+    def llm_config(self) -> Dict[str, Any]:
+        """LLM configuration."""
+        # [IMPLEMENTATION]
+    
+    @property
+    def ui_config(self) -> Dict[str, Any]:
+        """UI configuration."""
+        # [IMPLEMENTATION]
+
+# Global config instance
+config = Config()
+
+# Validate on import
+if not config.validate():
+    raise ValueError("Configuration validation failed!")
+
+if __name__ == "__main__":
+    config.print_config()
+Include:
+
+Comprehensive error handling
+Clear validation messages
+Type hints
+Documentation
+Example .env template in comments
+Make configuration crystal clear and easy to modify.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 7:**
+
+1. **Save to** `src/config.py`
+2. **Test it:**
+   ```bash
+   python src/config.py
+Verify: All config prints correctly, no errors
+Commit:
+bash
+git add src/config.py
+git commit -m "Configuration module implemented"
+⭐ PROMPT 8-12: Implement Core Pipeline Modules
+For the next hour, you'll implement the core RAG pipeline. I'll give you 5 prompts to run sequentially:
+
+PROMPT 8: Data Loader & Document Processor
+
+Code
+Implement src/data_loader.py and src/document_processor.py
+
+**Requirements from architecture:**
+[PASTE data loader and document processor sections from Prompt 6]
+
+**Data schema:**
+[PASTE schema from Prompt 3]
+
+---
+
+## src/data_loader.py
+
+Create module that:
+1. Loads JSON knowledge base
+2. Validates format
+3. Returns structured Document objects
+4. Handles errors gracefully
+
+```python
+"""
+Data Loading Module
+
+Loads and validates documents from knowledge base.
+"""
+
+from pathlib import Path
+from typing import List, Dict, Any
+from dataclasses import dataclass
+import json
+import logging
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class Document:
+    """Represents a single document from knowledge base."""
+    id: str
+    # [ADD ALL FIELDS FROM SCHEMA]
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary."""
+        # [IMPLEMENTATION]
+    
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> 'Document':
+        """Create from dictionary."""
+        # [IMPLEMENTATION]
+
+class DataLoader:
+    """Loads documents from knowledge base."""
+    
+    def __init__(self, data_path: Path):
+        """Initialize with data path."""
+        # [IMPLEMENTATION]
+    
+    def load(self) -> List[Document]:
+        """Load all documents."""
+        # [IMPLEMENTATION]
+    
+    def validate_document(self, doc_data: Dict[str, Any]) -> bool:
+        """Validate single document against schema."""
+        # [IMPLEMENTATION]
+
+# [COMPLETE IMPLEMENTATION]
+src/document_processor.py
+Create module that:
+
+Cleans document text (remove extra whitespace, special chars, etc.)
+Chunks documents with overlap
+Preserves metadata in chunks
+Returns processed chunks ready for embedding
+Python
+"""
+Document Processing Module
+
+Cleans and chunks documents for embedding.
+"""
+
+from typing import List, Dict, Any, Tuple
+from dataclasses import dataclass
+import re
+import logging
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class DocumentChunk:
+    """Represents a chunk of a document."""
+    chunk_id: str
+    source_doc_id: str
+    content: str
+    metadata: Dict[str, Any]
+    chunk_index: int
+    total_chunks: int
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary."""
+        # [IMPLEMENTATION]
+
+class DocumentProcessor:
+    """Processes documents for embedding."""
+    
+    def __init__(self, chunk_size: int = 800, chunk_overlap: int = 150):
+        """Initialize with chunking parameters."""
+        # [IMPLEMENTATION]
+    
+    def clean_text(self, text: str) -> str:
+        """Clean and normalize text."""
+        # [IMPLEMENTATION]
+    
+    def chunk_document(self, document: Document) -> List[DocumentChunk]:
+        """Chunk a single document."""
+        # [IMPLEMENTATION]
+    
+    def process_documents(self, documents: List[Document]) -> List[DocumentChunk]:
+        """Process all documents."""
+        # [IMPLEMENTATION]
+
+# [COMPLETE IMPLEMENTATION]
+Include:
+
+Error handling for malformed data
+Progress logging
+Validation at each step
+Type hints and docstrings
+Test in main block
+Implement completely and ready to run.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 8:**
+1. Save both files
+2. Test:
+   ```bash
+   python src/data_loader.py
+   python src/document_processor.py
+Verify documents load and chunk correctly
+Commit: git commit -m "Data loading and processing implemented"
+PROMPT 9: Embeddings Module
+
+Code
+Implement src/embeddings.py
+
+**Tech stack:**
+[PASTE embedding model choice from Prompt 2]
+
+**Architecture:**
+[PASTE embeddings section from Prompt 6]
+
+---
+
+Create module that:
+1. Initializes embedding model
+2. Generates embeddings for chunks (batch processing)
+3. Generates query embeddings
+4. Caches embeddings to avoid re-computation
+5. Handles API errors with retries
+
+```python
+"""
+Embeddings Module
+
+Generates vector embeddings for documents and queries.
+"""
+
+from typing import List, Dict, Any, Optional
+import numpy as np
+from pathlib import Path
+import pickle
+import logging
+from tenacity import retry, stop_after_attempt, wait_exponential
+
+logger = logging.getLogger(__name__)
+
+class EmbeddingGenerator:
+    """Generates embeddings using [MODEL NAME]."""
+    
+    def __init__(
+        self,
+        model_name: str,
+        cache_dir: Optional[Path] = None,
+        batch_size: int = 32
+    ):
+        """Initialize embedding model."""
+        # [IMPLEMENTATION - initialize model based on choice from Prompt 2]
+    
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=2, max=10))
+    def _generate_embedding(self, text: str) -> np.ndarray:
+        """Generate single embedding with retry logic."""
+        # [IMPLEMENTATION]
+    
+    def generate_embeddings(self, texts: List[str], show_progress: bool = True) -> np.ndarray:
+        """Generate embeddings for multiple texts (batched)."""
+        # [IMPLEMENTATION with batch processing]
+    
+    def embed_query(self, query: str) -> np.ndarray:
+        """Generate embedding for a query."""
+        # [IMPLEMENTATION]
+    
+    def embed_chunks(self, chunks: List[DocumentChunk]) -> Dict[str, np.ndarray]:
+        """Generate embeddings for document chunks."""
+        # [IMPLEMENTATION]
+    
+    def save_embeddings(self, embeddings: Dict[str, np.ndarray], path: Path):
+        """Save embeddings to disk."""
+        # [IMPLEMENTATION]
+    
+    def load_embeddings(self, path: Path) -> Dict[str, np.ndarray]:
+        """Load embeddings from disk."""
+        # [IMPLEMENTATION]
+    
+    @property
+    def dimension(self) -> int:
+        """Return embedding dimension."""
+        # [IMPLEMENTATION]
+
+# [COMPLETE IMPLEMENTATION]
+
+def main():
+    """Test embedding generation."""
+    from config import config
+    from data_loader import DataLoader
+    from document_processor import DocumentProcessor
+    
+    # Load and process documents
+    loader = DataLoader(config.data_config["data_path"])
+    documents = loader.load()
+    
+    processor = DocumentProcessor(
+        chunk_size=config.data_config["chunk_size"],
+        chunk_overlap=config.data_config["chunk_overlap"]
+    )
+    chunks = processor.process_documents(documents)
+    
+    # Generate embeddings
+    embedder = EmbeddingGenerator(
+        model_name=config.embedding_config["model_name"],
+        cache_dir=Path("data/embeddings")
+    )
+    
+    embeddings = embedder.embed_chunks(chunks)
+    
+    logger.info(f"Generated {len(embeddings)} embeddings")
+    logger.info(f"Embedding dimension: {embedder.dimension}")
+    
+    # Save
+    embedder.save_embeddings(embeddings, Path("data/embeddings/document_embeddings.pkl"))
+
+if __name__ == "__main__":
+    main()
+Include:
+
+Batch processing for efficiency
+Progress bars (use tqdm)
+Error handling with retries
+Caching mechanism
+Type hints and documentation
+Make it production-ready with proper error handling.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 9:**
+1. Save to `src/embeddings.py`
+2. **Run it** (this will generate embeddings for your dataset):
+   ```bash
+   python src/embeddings.py
+Verify: data/embeddings/document_embeddings.pkl created
+Check time - you should be around minute 90-100
+Commit: git commit -m "Embeddings generation implemented"
+PROMPT 10: Vector Store Module
+
+Code
+Implement src/vector_store.py
+
+**Tech stack:**
+[PASTE vector database choice from Prompt 2]
+
+**Architecture:**
+[PASTE vector store section from Prompt 6]
+
+---
+
+Create module that:
+1. Initializes vector database
+2. Adds documents with embeddings
+3. Performs similarity search
+4. **Implements hybrid search** (semantic + keyword) - DIFFERENTIATOR COMPONENT
+5. Filters by metadata
+6. Manages connections and errors
+
+```python
+"""
+Vector Store Module
+
+Manages vector database for similarity search.
+"""
+
+from typing import List, Dict, Any, Optional, Tuple
+import numpy as np
+from dataclasses import dataclass
+import logging
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class SearchResult:
+    """Represents a search result."""
+    chunk_id: str
+    content: str
+    metadata: Dict[str, Any]
+    score: float
+    source_doc_id: str
+    
+    def to_dict(self) -> Dict[str, Any]:
+        """Convert to dictionary."""
+        return {
+            "chunk_id": self.chunk_id,
+            "content": self.content,
+            "metadata": self.metadata,
+            "score": self.score,
+            "source_doc_id": self.source_doc_id
+        }
+
+class VectorStore:
+    """Vector database for similarity search using [DB NAME from Prompt 2]."""
+    
+    def __init__(
+        self,
+        embedding_dim: int,
+        similarity_metric: str = "cosine",
+        index_path: Optional[str] = None
+    ):
+        """Initialize vector store."""
+        # [IMPLEMENTATION based on chosen vector DB]
+    
+    def add_documents(
+        self,
+        chunks: List[DocumentChunk],
+        embeddings: Dict[str, np.ndarray]
+    ) -> bool:
+        """Add documents with embeddings to store."""
+        # [IMPLEMENTATION]
+    
+    def similarity_search(
+        self,
+        query_embedding: np.ndarray,
+        k: int = 5,
+        filter_dict: Optional[Dict[str, Any]] = None
+    ) -> List[SearchResult]:
+        """Perform semantic similarity search."""
+        # [IMPLEMENTATION]
+    
+    def keyword_search(
+        self,
+        query: str,
+        k: int = 5,
+        filter_dict: Optional[Dict[str, Any]] = None
+    ) -> List[SearchResult]:
+        """Perform keyword-based search."""
+        # [IMPLEMENTATION using BM25 or similar]
+    
+    def hybrid_search(
+        self,
+        query: str,
+        query_embedding: np.ndarray,
+        k: int = 5,
+        alpha: float = 0.5,
+        filter_dict: Optional[Dict[str, Any]] = None
+    ) -> List[SearchResult]:
+        """
+        Perform hybrid search (semantic + keyword).
+        
+        Args:
+            query: Query text
+            query_embedding: Query vector embedding
+            k: Number of results
+            alpha: Balance between semantic (1.0) and keyword (0.0). Default 0.5.
+            filter_dict: Metadata filters
+        
+        Returns:
+            Combined and re-ranked results
+        """
+        # [IMPLEMENTATION]
+        # 1. Get semantic results
+        # 2. Get keyword results
+        # 3. Combine scores: final_score = alpha * semantic_score + (1-alpha) * keyword_score
+        # 4. Re-rank and return top k
+    
+    def get_by_id(self, chunk_id: str) -> Optional[SearchResult]:
+        """Retrieve specific chunk by ID."""
+        # [IMPLEMENTATION]
+    
+    def delete_all(self):
+        """Clear all documents from store."""
+        # [IMPLEMENTATION]
+    
+    def save_index(self, path: str):
+        """Save index to disk."""
+        # [IMPLEMENTATION]
+    
+    def load_index(self, path: str):
+        """Load index from disk."""
+        # [IMPLEMENTATION]
+
+# [COMPLETE IMPLEMENTATION]
+
+def main():
+    """Test vector store."""
+    from config import config
+    from data_loader import DataLoader
+    from document_processor import DocumentProcessor
+    from embeddings import EmbeddingGenerator
+    
+    # Load documents
+    loader = DataLoader(config.data_config["data_path"])
+    documents = loader.load()
+    
+    # Process
+    processor = DocumentProcessor()
+    chunks = processor.process_documents(documents)
+    
+    # Generate embeddings
+    embedder = EmbeddingGenerator(config.embedding_config["model_name"])
+    embeddings = embedder.embed_chunks(chunks)
+    
+    # Initialize vector store
+    vector_store = VectorStore(embedding_dim=embedder.dimension)
+    
+    # Add documents
+    vector_store.add_documents(chunks, embeddings)
+    logger.info(f"Added {len(chunks)} chunks to vector store")
+    
+    # Test search
+    test_query = "[RELEVANT QUERY FROM YOUR USE CASE]"
+    query_emb = embedder.embed_query(test_query)
+    
+    # Semantic search
+    results = vector_store.similarity_search(query_emb, k=3)
+    print("\n=== Semantic Search Results ===")
+    for i, result in enumerate(results, 1):
+        print(f"{i}. Score: {result.score:.3f}")
+        print(f"   {result.content[:200]}...")
+    
+    # Hybrid search
+    hybrid_results = vector_store.hybrid_search(test_query, query_emb, k=3, alpha=0.7)
+    print("\n=== Hybrid Search Results ===")
+    for i, result in enumerate(hybrid_results, 1):
+        print(f"{i}. Score: {result.score:.3f}")
+        print(f"   {result.content[:200]}...")
+
+if __name__ == "__main__":
+    main()
+CRITICAL: Hybrid search is a key differentiator. Implement it well:
+
+Combine semantic understanding with keyword matching
+Allow tuning via alpha parameter
+Explain this feature prominently in demo
+Include comprehensive error handling and logging.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 10:**
+1. Save to `src/vector_store.py`
+2. **Run it** (this creates the vector index):
+   ```bash
+   python src/vector_store.py
+Verify search results look relevant
+Test hybrid search - should show different results than pure semantic
+Commit: git commit -m "Vector store with hybrid search implemented"
+Check time - around minute 110-120 (2 hour mark)
+PROMPT 11: Retriever Module
+
+Code
+Implement src/retriever.py
+
+**Architecture:**
+[PASTE retriever section from Prompt 6]
+
+---
+
+Create advanced retriever with:
+1. Query preprocessing
+2. Retrieval using vector store
+3. Re-ranking results
+4. Context building for LLM
+5. Source citation preparation
+
+```python
+"""
+Retriever Module
+
+Advanced retrieval with query preprocessing and re-ranking.
+"""
+
+from typing import List, Dict, Any, Tuple
+import re
+import logging
+from dataclasses import dataclass
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class RetrievalResult:
+    """Enhanced retrieval result with context."""
+    content: str
+    source_id: str
+    source_title: str
+    score: float
+    metadata: Dict[str, Any]
+    excerpt: str  # Highlighted relevant portion
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "content": self.content,
+            "source_id": self.source_id,
+            "source_title": self.source_title,
+            "score": self.score,
+            "metadata": self.metadata,
+            "excerpt": self.excerpt
+        }
+
+class Retriever:
+    """Advanced retrieval with preprocessing and re-ranking."""
+    
+    def __init__(
+        self,
+        vector_store: VectorStore,
+        embedder: EmbeddingGenerator,
+        top_k: int = 5,
+        similarity_threshold: float = 0.7,
+        use_hybrid: bool = True,
+        hybrid_alpha: float = 0.7
+    ):
+        """Initialize retriever."""
+        self.vector_store = vector_store
+        self.embedder = embedder
+        self.top_k = top_k
+        self.similarity_threshold = similarity_threshold
+        self.use_hybrid = use_hybrid
+        self.hybrid_alpha = hybrid_alpha
+    
+    def preprocess_query(self, query: str) -> str:
+        """
+        Preprocess query for better retrieval.
+        - Fix common typos
+        - Expand abbreviations
+        - Normalize formatting
+        """
+        # [IMPLEMENTATION]
+        # Clean whitespace
+        # Fix capitalization
+        # Expand domain-specific abbreviations
+        # Remove unnecessary words
+        return processed_query
+    
+    def retrieve(
+        self,
+        query: str,
+        k: Optional[int] = None,
+        filters: Optional[Dict[str, Any]] = None
+    ) -> List[SearchResult]:
+        """Retrieve relevant documents."""
+        # Preprocess
+        processed_query = self.preprocess_query(query)
+        
+        # Generate embedding
+        query_embedding = self.embedder.embed_query(processed_query)
+        
+        # Search
+        k = k or self.top_k
+        if self.use_hybrid:
+            results = self.vector_store.hybrid_search(
+                processed_query,
+                query_embedding,
+                k=k * 2,  # Get more for re-ranking
+                alpha=self.hybrid_alpha,
+                filter_dict=filters
+            )
+        else:
+            results = self.vector_store.similarity_search(
+                query_embedding,
+                k=k * 2,
+                filter_dict=filters
+            )
+        
+        # Re-rank
+        reranked = self.rerank(query, results)
+        
+        # Filter by threshold
+        filtered = [r for r in reranked if r.score >= self.similarity_threshold]
+        
+        return filtered[:k]
+    
+    def rerank(self, query: str, results: List[SearchResult]) -> List[SearchResult]:
+        """
+        Re-rank results using additional signals.
+        - Boost exact keyword matches
+        - Boost recent documents (if temporal)
+        - Consider document authority/source quality
+        """
+        # [IMPLEMENTATION]
+        # Calculate additional relevance scores
+        # Combine with original scores
+        # Sort by final score
+        return reranked_results
+    
+    def build_context(
+        self,
+        query: str,
+        results: List[SearchResult]
+    ) -> Tuple[str, List[RetrievalResult]]:
+        """
+        Build context string for LLM and prepare sources.
+        
+        Returns:
+            (context_string, sources)
+        """
+        sources = []
+        context_parts = []
+        
+        for i, result in enumerate(results, 1):
+            # Extract relevant excerpt
+            excerpt = self._extract_relevant_excerpt(query, result.content)
+            
+            # Create retrieval result
+            sources.append(RetrievalResult(
+                content=result.content,
+                source_id=result.source_doc_id,
+                source_title=result.metadata.get("title", f"Source {i}"),
+                score=result.score,
+                metadata=result.metadata,
+                excerpt=excerpt
+            ))
+            
+            # Build context string
+            context_parts.append(
+                f"[Source {i}] {result.metadata.get('title', 'Untitled')}\n"
+                f"{result.content}\n"
+            )
+        
+        context = "\n---\n".join(context_parts)
+        
+        return context, sources
+    
+    def _extract_relevant_excerpt(
+        self,
+        query: str,
+        content: str,
+        context_chars: int = 200
+    ) -> str:
+        """Extract most relevant portion of content for display."""
+        # [IMPLEMENTATION]
+        # Find query keywords in content
+        # Extract surrounding context
+        # Return excerpt with "..." if truncated
+        return excerpt
+
+# [COMPLETE IMPLEMENTATION]
+
+def main():
+    """Test retriever."""
+    # [SETUP CODE TO TEST]
+    
+    retriever = Retriever(
+        vector_store=vector_store,
+        embedder=embedder,
+        top_k=5,
+        use_hybrid=True
+    )
+    
+    test_queries = [
+        "[QUERY 1 FROM YOUR DOMAIN]",
+        "[QUERY 2 FROM YOUR DOMAIN]",
+        "[QUERY 3 FROM YOUR DOMAIN]"
+    ]
+    
+    for query in test_queries:
+        print(f"\n{'='*80}")
+        print(f"Query: {query}")
+        print('='*80)
+        
+        results = retriever.retrieve(query)
+        context, sources = retriever.build_context(query, results)
+        
+        print(f"\nRetrieved {len(sources)} sources:")
+        for source in sources:
+            print(f"  - {source.source_title} (score: {source.score:.3f})")
+            print(f"    {source.excerpt}")
+
+if __name__ == "__main__":
+    main()
+Include:
+
+Smart query preprocessing
+Re-ranking logic
+Excerpt extraction for UI display
+Comprehensive logging
+Type hints and documentation
+Make retrieval intelligent and explainable.
+
+Code
+
+---
+
+**✅ ACTION AFTER PROMPT 11:**
+1. Save to `src/retriever.py`
+2. **Run it:**
+   ```bash
+   python src/retriever.py
+Verify retrieval results are relevant
+Note the excerpts - these will be shown in UI
+Commit: git commit -m "Intelligent retriever with re-ranking implemented"
+PROMPT 12: LLM Handler Module
+
+Code
+Implement src/llm_handler.py
+
+**Tech stack:**
+[PASTE LLM choice from Prompt 2]
+
+**Use case context:**
+[PASTE "INDUSTRY CONTEXT" from Prompt 1]
+
+---
+
+Create LLM handler with:
+1. Carefully engineered prompts for this specific use case
+2. Response generation with source citations
+3. Confidence scoring
+4. Hallucination detection
+5. Error handling and fallbacks
+
+```python
+"""
+LLM Handler Module
+
+Manages LLM interactions with engineered prompts.
+"""
+
+from typing import List, Dict, Any, Optional, Tuple
+import logging
+from dataclasses import dataclass
+from tenacity import retry, stop_after_attempt, wait_exponential
+
+logger = logging.getLogger(__name__)
+
+@dataclass
+class LLMResponse:
+    """LLM response with metadata."""
+    answer: str
+    sources_used: List[int]  # Indices of sources cited
+    confidence: float
+    has_answer: bool
+    raw_response: str
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "answer": self.answer,
+            "sources_used": self.sources_used,
+            "confidence": self.confidence,
+            "has_answer": self.has_answer
+        }
+
+class LLMHandler:
+    """Handles LLM generation
+You said: what is the prompt 1 does?
+what is the prompt 1 does?
+Copilot said: # 📌 What PROMPT 1 Does -
+📌 What PROMPT 1 Does - Detailed Explanation
+PROMPT 1 is the most critical strategic analysis step that transforms the raw hackathon use case into a structured, actionable plan.
+
+🎯 Purpose of PROMPT 1
+When you receive the hackathon use case (which might be vague or brief), PROMPT 1 forces GitHub Copilot to:
+
+Deeply analyze the problem
+Add industry context to make it realistic
+Define clear inputs/outputs for your system
+Identify differentiation opportunities
+Create your demo narrative
+📊 What You Get as Output
+1. Core Problem Summary
+What it does: Distills the use case into 2-3 clear sentences
+Why it matters: You'll use this in your pitch and README
+Example output:
+Code
+"Customer service teams spend 40% of their time answering repetitive 
+questions from internal documentation. Current solutions require manual 
+searching through 100+ documents, leading to slow response times and 
+inconsistent answers."
+2. Industry Context & Target Users
+What it does:
+
+Identifies which industry (Healthcare, Finance, E-commerce, etc.)
+Creates specific user personas with real pain points
+Shows you understand the business problem, not just the tech
+Why it matters:
+
+Judges want to see business value, not just cool tech
+Helps you talk about impact in your demo
+Guides what sample data to create
+Example output:
+
+Code
+Industry: Customer Service / SaaS Support
+
+Primary User: Support Agent (Sarah, 28)
+- Pain: Searches through 15 Notion docs to answer one question
+- Current workflow: Manual Ctrl+F across multiple tabs
+- Success criteria: Find answers in <30 seconds instead of 5 minutes
+
+Secondary User: Support Manager (Mike, 35)
+- Pain: Inconsistent answers from different agents
+- Current workflow: Manual quality reviews
+- Success criteria: 90% answer consistency across team
+3. Problem Statement & Solution Goal
+What it does:
+
+Lists what's wrong with current solutions
+Defines what success looks like
+Explains WHY RAG is the right approach
+Why it matters:
+
+This becomes your "problem slide" in the presentation
+Justifies your technical choices to judges
+Sets clear success criteria
+Example output:
+
+Code
+Current Solution Limitations:
+1. Manual search is slow (5+ minutes per query)
+2. No semantic understanding (exact keywords only)
+3. Can't combine info from multiple sources
+4. No answer consistency tracking
+
+Our AI Solution Goal:
+Build an intelligent chatbot that uses RAG to instantly retrieve 
+and synthesize answers from company knowledge base with source citations.
+
+Success Metrics:
+- Answer time < 30 seconds
+- Source citations for every answer
+- 85%+ answer relevance
+4. Key Requirements (Must-Have Features)
+What it does: Lists the minimum features needed to solve the problem
+
+Why it matters: Keeps you focused; prevents scope creep in 4 hours
+
+Example output:
+
+Code
+Functional Requirements:
+☑ Accept natural language questions
+☑ Search across all knowledge documents
+☑ Generate coherent answers from multiple sources
+☑ Display source citations
+
+Technical Requirements:
+☑ Vector similarity search
+☑ Handle 50+ documents
+☑ Response time < 10 seconds
+
+UX Requirements:
+☑ Chat interface
+☑ Show sources clearly
+5. Data Input & Output Specification
+This is THE MOST IMPORTANT part for implementation:
+
+5a. INPUT DATA STRUCTURE
+What it does:
+
+Defines exactly what your knowledge base documents should look like
+Specifies what metadata you need
+Gives you a JSON schema to follow
+Why it matters:
+
+You'll use this schema in PROMPT 4 to generate sample data
+Ensures your data has all needed fields
+Makes data loading straightforward
+Example output:
+
+JSON
+Knowledge Base Document Schema:
+{
+  "id": "string (unique)",
+  "title": "string (document title)",
+  "content": "string (main text, 200-1000 words)",
+  "category": "string (billing|technical|account|etc)",
+  "last_updated": "date",
+  "author": "string",
+  "tags": ["string"],
+  "source_url": "string (optional)"
+}
+
+Example Document:
+{
+  "id": "kb-001",
+  "title": "How to Reset Password",
+  "content": "To reset your password, follow these steps...",
+  "category": "account",
+  "last_updated": "2026-01-15",
+  "author": "support-team",
+  "tags": ["password", "security", "account"],
+  "source_url": "https://help.company.com/reset-password"
+}
+5b. USER QUERY INPUT
+What it does:
+
+Shows what types of questions users will ask
+Gives examples of simple vs complex queries
+Example output:
+
+Code
+Query Types:
+- Simple factual: "How do I reset my password?"
+- Multi-step: "What are the differences between Basic and Pro plans?"
+- Comparison: "Compare refund policies for monthly vs annual subscriptions"
+
+Example Queries:
+1. "How long does a refund take?" (Simple)
+2. "What features are included in the Enterprise plan?" (Medium)
+3. "If I upgrade mid-month, how is billing prorated?" (Complex)
+5c. OUTPUT DATA STRUCTURE
+What it does:
+
+Defines exactly what your chatbot response should include
+Specifies the response format (JSON structure)
+Why it matters:
+
+This becomes your API contract
+You'll implement this exact structure in your code
+Makes UI development straightforward
+Example output:
+
+JSON
+Response Format:
+{
+  "answer": "Your monthly subscription will be prorated based on...",
+  "sources": [
+    {
+      "id": "kb-023",
+      "title": "Billing FAQ",
+      "excerpt": "Prorated charges are calculated by...",
+      "relevance_score": 0.92,
+      "url": "https://help.company.com/billing-faq"
+    }
+  ],
+  "confidence_score": 0.89,
+  "metadata": {
+    "response_time_ms": 1250,
+    "num_sources_searched": 45,
+    "query_category": "billing"
+  }
+}
+6. Differentiation Opportunities
+What it does:
+
+Suggests 3 specific ways to stand out from other teams
+Ranks them by impact vs. effort
+Recommends which one to pursue
+Why it matters:
+
+Everyone will build basic RAG; this makes you unique
+Focuses your limited time on high-impact features
+Gives you a "technical highlight" for your demo
+Example output:
+
+Code
+Option 1: Conversation Memory (RECOMMENDED)
+- What: Track context across multi-turn conversations
+- Why: Users often ask follow-ups like "What about the Pro plan?"
+- Complexity: Medium
+- Demo wow factor: HIGH
+- Implementation: 30-45 minutes
+
+Option 2: Real-time Feedback Loop
+- What: Let users thumbs up/down answers, use to improve retrieval
+- Why: Shows continuous learning capability
+- Complexity: Medium
+- Demo wow factor: Medium
+- Implementation: 45-60 minutes
+
+Option 3: Confidence-Based Routing
+- What: If confidence <70%, ask clarifying questions instead of guessing
+- Why: Shows responsible AI - admits uncertainty
+- Complexity: Low
+- Demo wow factor: Medium
+- Implementation: 20-30 minutes
+7. Demo Narrative Structure
+What it does:
+
+Pre-writes your 3-minute pitch script
+Defines your demo flow
+Suggests specific questions to showcase
+Why it matters:
+
+You won't have time to prepare presentation later
+Ensures your demo tells a compelling story
+Makes you look polished and prepared
+Example output:
+
+Code
+Opening Hook (10 sec):
+"Support agents waste 2 hours per day searching documentation."
+
+Problem Illustration (20 sec):
+"Meet Sarah - she gets 50 questions per day. Each requires searching 
+through 15 different docs. By the time she finds the answer, the 
+customer is frustrated."
+
+Solution (15 sec):
+"Our AI-powered support assistant uses RAG to instantly search all 
+documentation and provide accurate answers with source citations."
+
+Demo Questions (90 sec):
+1. "How do I reset my password?" → Shows it works
+2. "Compare the features in Basic vs Pro plans" → Shows multi-doc reasoning
+3. Follow-up: "What about Enterprise?" → Shows conversation memory (YOUR DIFFERENTIATOR)
+
+Technical Highlight (20 sec):
+"Unlike simple keyword search, we use hybrid retrieval - combining 
+semantic understanding with keyword matching for 23% better accuracy."
+🔄 How PROMPT 1 Flows Into Other Prompts
+Code
+PROMPT 1 Output
+    ↓
+    ├─→ PROMPT 2: Uses "core problem" to choose optimal tech stack
+    ├─→ PROMPT 3: Uses "input/output specification" to design data schema
+    ├─→ PROMPT 4: Uses data schema to generate sample documents
+    ├─→ PROMPT 6: Uses "requirements" to design architecture
+    ├─→ PROMPT 13: Uses "differentiation" to implement unique feature
+    └─→ PROMPT 15: Uses "demo narrative" to prepare presentation
+✅ What You Actually DO With PROMPT 1 Output
+Immediate actions:
+
+Copy entire output to analysis/problem_analysis.md
+
+Make key decisions:
+
+Choose your differentiator (from the 3 options)
+Write it in EXECUTION_TRACKER.md
+Extract key info for later:
+
+Copy "Core Problem Summary" → use in README and pitch
+Copy "Demo Narrative" → use in presentation prep
+Copy "Input/Output Schema" → paste into PROMPT 3 and PROMPT 4
+Validate understanding:
+
+Read through the analysis
+Make sure it matches the use case
+If something seems off, refine:
+Code
+The analysis says [X], but the use case actually requires [Y].
+Please revise section 3 to account for this.
+🎯 Why PROMPT 1 is Front-Loaded
+Most hackathon participants jump straight to coding. You won't.
+
+By spending 10 minutes on PROMPT 1, you:
+
+✅ Avoid wasted effort - No building features you don't need
+✅ Make better technical choices - Tech stack matches the problem
+✅ Create better demo - You know your story from the start
+✅ Impress judges - You clearly understand the business problem
+✅ Save time - Clear requirements prevent mid-build pivots
+
+💡 TL;DR - PROMPT 1 in One Sentence
+PROMPT 1 transforms a vague hackathon use case into a complete strategic blueprint with clear inputs, outputs, requirements, and differentiation strategy - giving you the roadmap for the entire 4 hours.
+
+Does this clarify what PROMPT 1 does? Should I also explain how the other prompts build on this foundation?
+
+You said: analyze the prompt 1 implement the feedback
+analyze the prompt 1 implement the feedback and give me once again
+Copilot said: # ⭐ **PROMPT 1: REVISED & OPTIMIZED** **Copy
+⭐ PROMPT 1: REVISED & OPTIMIZED
+Copy this EXACT prompt into GitHub Copilot Chat when you receive your hackathon use case:
+
+Code
+I'm participating in a 4-hour AI hackathon to build a RAG-powered chatbot solution. Here is the use case I just received:
+
+"""
+[PASTE THE COMPLETE HACKATHON USE CASE HERE - COPY EVERY WORD EXACTLY AS GIVEN]
+"""
+
+---
+
+Analyze this use case and provide a comprehensive strategic blueprint following this EXACT structure:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 1. CORE PROBLEM SUMMARY
+
+Write a concise 2-3 sentence summary that captures:
+- What problem are we solving?
+- Why does this problem matter?
+- Who is affected by this problem?
+
+Make this compelling - I'll use it in my opening pitch and README.
+
+[YOUR ANALYSIS HERE]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 2. INDUSTRY CONTEXT & TARGET USERS
+
+## 2.1 Industry Domain
+
+**Primary Industry:** [Identify: Healthcare | Finance | E-commerce | Education | Customer Service | Legal | HR | Real Estate | Manufacturing | Other]
+
+**Industry Sub-sector:** [Be specific: e.g., "SaaS Customer Support" not just "Customer Service"]
+
+**Why This Industry Has This Problem:**
+- [Industry-specific challenge 1]
+- [Industry-specific challenge 2]
+- [Industry-specific challenge 3]
+- [Market size/impact if known]
+
+---
+
+## 2.2 Primary Target User Persona
+
+**Role/Title:** [Specific job title]
+
+**Demographics:**
+- Experience level: [Junior/Mid/Senior]
+- Technical proficiency: [Low/Medium/High]
+- Daily workload: [Describe typical day]
+
+**Current Pain Points:**
+1. **[Pain Point 1 - be ultra specific]**
+   - Time wasted: [Quantify: e.g., "2 hours/day"]
+   - Frustration level: [High/Medium/Low]
+   - Workaround they use now: [How they cope today]
+
+2. **[Pain Point 2 - be ultra specific]**
+   - Time wasted: [Quantify]
+   - Frustration level: [High/Medium/Low]
+   - Workaround they use now: [Current solution]
+
+3. **[Pain Point 3 - be ultra specific]**
+   - Time wasted: [Quantify]
+   - Frustration level: [High/Medium/Low]
+   - Workaround they use now: [Current solution]
+
+**Current Daily Workflow (Before Our Solution):**
+Step 1: [What they do first] Step 2: [What they do next] Step 3: [Where they get stuck] Step 4: [How they eventually solve it] Time taken: [X minutes/hours] Success rate: [Y%]
+
+Code
+
+**Success Criteria (What Makes Their Day Better):**
+- [ ] [Specific measurable outcome 1]
+- [ ] [Specific measurable outcome 2]
+- [ ] [Specific measurable outcome 3]
+
+---
+
+## 2.3 Secondary Target User Persona (if applicable)
+
+[Repeat same structure as 2.2 for a second user type who benefits]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 3. PROBLEM STATEMENT & SOLUTION GOAL
+
+## 3.1 Current Solution Landscape
+
+**What Users Do Today:**
+[Describe current approach in detail]
+
+**Existing Solutions & Their Limitations:**
+
+**Solution Type 1: [e.g., "Manual Search"]**
+- What it is: [Brief description]
+- Why it fails: [Specific failure mode]
+- User frustration: [What users complain about]
+- Quantified impact: [Time/money/quality lost]
+
+**Solution Type 2: [e.g., "Basic Keyword Search"]**
+- What it is: [Brief description]
+- Why it fails: [Specific failure mode]
+- User frustration: [What users complain about]
+- Quantified impact: [Time/money/quality lost]
+
+**Solution Type 3: [e.g., "Generic Chatbot"]**
+- What it is: [Brief description]
+- Why it fails: [Specific failure mode]
+- User frustration: [What users complain about]
+- Quantified impact: [Time/money/quality lost]
+
+**Root Cause Analysis:**
+The fundamental reason existing solutions fail is: [Deep insight about why the problem persists]
+
+---
+
+## 3.2 Our AI Solution Goal
+
+**One-Sentence Solution Definition:**
+[Write ONE clear sentence: "We will build [WHAT] that helps [WHO] to [DO WHAT] by [HOW]"]
+
+**Why RAG is the Perfect Approach for THIS Problem:**
+
+1. **[RAG Capability 1]** solves **[Specific Problem]**
+   - Example: "Semantic search finds relevant docs even with different wording" → solves "Users don't know exact keywords"
+
+2. **[RAG Capability 2]** solves **[Specific Problem]**
+   - Example: "Multi-document synthesis" → solves "Answer requires combining 3+ sources"
+
+3. **[RAG Capability 3]** solves **[Specific Problem]**
+   - Example: "Source attribution" → solves "Users need to verify answers"
+
+**Why NOT just use ChatGPT/Claude directly:**
+- [Reason 1: e.g., "Needs access to proprietary company docs"]
+- [Reason 2: e.g., "Must cite sources for compliance"]
+- [Reason 3: e.g., "Information changes frequently, can't retrain models"]
+
+---
+
+## 3.3 Success Metrics
+
+**Quantitative Metrics:**
+- Response time: < [X] seconds
+- Answer relevance: > [Y]% (measured by [how])
+- Source citation accuracy: > [Z]%
+- User satisfaction: > [W]% positive feedback
+
+**Qualitative Metrics:**
+- [Metric 1: e.g., "Answers sound natural, not robotic"]
+- [Metric 2: e.g., "Citations are actually helpful"]
+- [Metric 3: e.g., "Handles edge cases gracefully"]
+
+**Demo Success Criteria (How I'll Know Demo Worked):**
+- [ ] [Observable outcome 1]
+- [ ] [Observable outcome 2]
+- [ ] [Observable outcome 3]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 4. KEY REQUIREMENTS (Must-Have Features)
+
+## 4.1 Core Functional Requirements
+
+Prioritize these by MoSCoW method:
+
+**MUST HAVE (Will not demo without these):**
+- [ ] **[Requirement 1]**
+  - Acceptance criteria: [How to verify it works]
+  - User story: As a [user], I need to [action] so that [benefit]
+  
+- [ ] **[Requirement 2]**
+  - Acceptance criteria: [How to verify it works]
+  - User story: As a [user], I need to [action] so that [benefit]
+
+- [ ] **[Requirement 3]**
+  - Acceptance criteria: [How to verify it works]
+  - User story: As a [user], I need to [action] so that [benefit]
+
+- [ ] **[Requirement 4]**
+  - Acceptance criteria: [How to verify it works]
+  - User story: As a [user], I need to [action] so that [benefit]
+
+**SHOULD HAVE (Important but not critical):**
+- [ ] [Requirement 5] - [Why it's important]
+- [ ] [Requirement 6] - [Why it's important]
+
+**COULD HAVE (Only if time permits):**
+- [ ] [Nice-to-have 1] - [Why it's nice]
+- [ ] [Nice-to-have 2] - [Why it's nice]
+
+---
+
+## 4.2 Technical Requirements
+
+**Performance Requirements:**
+- Query response time: < [X] seconds (because [reason])
+- System uptime during demo: 99.9% (cannot crash)
+- Concurrent users: Support [N] simultaneous queries
+- Scalability: Handle [M] documents minimum
+
+**Data Requirements:**
+- Minimum dataset size: [N] documents covering [X] topics
+- Data freshness: [How recent data needs to be]
+- Data quality: [Accuracy/completeness standards]
+
+**Integration Requirements:**
+- [Integration 1 if any: e.g., "Must work with existing auth system"]
+- [Integration 2 if any: e.g., "Must export conversation history"]
+
+**Infrastructure Requirements:**
+- Deployment: [Local demo | Cloud-based | Hybrid]
+- Dependencies: [Any specific libraries/services required]
+- API limits: [Any rate limits to be aware of]
+
+---
+
+## 4.3 User Experience Requirements
+
+**Usability Requirements:**
+- [ ] **Response clarity:** Answers must be understandable by [user persona] without technical background
+- [ ] **Source transparency:** User must see where information came from
+- [ ] **Error handling:** Graceful failures with helpful messages (no stack traces!)
+- [ ] **Loading states:** Show progress during processing (no blank screens)
+
+**Interface Requirements:**
+- [ ] Chat-style interface (familiar pattern for users)
+- [ ] Source citations visible but not intrusive
+- [ ] Mobile-responsive [if applicable]
+- [ ] Accessibility: [Specific needs: screen reader support, color contrast, etc.]
+
+**Conversation Requirements:**
+- [ ] Maintain context for [N] turns in conversation
+- [ ] Handle follow-up questions without repeating context
+- [ ] Allow conversation reset/new topic
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+# 5. INPUT DATA & OUTPUT DATA SPECIFICATION
+
+## 5.1 KNOWLEDGE BASE INPUT DATA STRUCTURE
+
+### 5.1.1 Document Schema (JSON)
+
+Based on the use case, here's the optimal schema:
+
+```json
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["id", "title", "content", "category", "metadata"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier for document",
+      "example": "doc-001"
+    },
+    "title": {
+      "type": "string",
+      "description": "Document title or heading",
+      "minLength": 5,
+      "maxLength": 200,
+      "example": "[Domain-specific example]"
+    },
+    "content": {
+      "type": "string",
+      "description": "Main document body text",
+      "minLength": 100,
+      "maxLength": 5000,
+      "example": "[Domain-specific example]"
+    },
+    "category": {
+      "type": "string",
+      "description": "Primary category/topic",
+      "enum": ["[category1]", "[category2]", "[category3]", "[etc]"],
+      "example": "[domain-specific category]"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "[field1]": {
+          "type": "[type]",
+          "description": "[why this field is needed]"
+        },
+        "[field2]": {
+          "type": "[type]",
+          "description": "[why this field is needed]"
+        },
+        "[add more fields as needed]": {}
+      }
+    }
+  }
+}
+5.1.2 Field-by-Field Explanation
+Field Name	Data Type	Purpose	Example Value	Used For
+id	string	Unique identifier	"kb-123"	Document tracking, deduplication
+title	string	Document heading	[domain example]	Display in UI, search ranking boost
+content	string	Main text	[domain example]	Embedding, retrieval, answer generation
+category	string	Topic classification	[domain example]	Filtering, metadata search
+[metadata1]	[type]	[purpose]	[example]	[usage]
+[add more]				
+5.1.3 Sample Input Documents
+Document Example 1 - Simple/Basic:
+
+JSON
+{
+  "id": "[example-id-1]",
+  "title": "[realistic title for use case]",
+  "content": "[150-300 words of realistic domain-specific content that would actually appear in this knowledge base]",
+  "category": "[appropriate category]",
+  "metadata": {
+    "[field]": "[value]",
+    "[field]": "[value]"
+  }
+}
+Document Example 2 - Complex/Detailed:
+
+JSON
+{
+  "id": "[example-id-2]",
+  "title": "[realistic title]",
+  "content": "[500-800 words of more detailed, technical content with multiple sections, lists, or steps]",
+  "category": "[appropriate category]",
+  "metadata": {
+    "[field]": "[value]",
+    "[field]": "[value]"
+  }
+}
+Document Example 3 - Edge Case:
+
+JSON
+{
+  "id": "[example-id-3]",
+  "title": "[realistic title]",
+  "content": "[Content that represents an edge case: very short, unusual format, contradictory info, or rare scenario]",
+  "category": "[appropriate category]",
+  "metadata": {
+    "[field]": "[value]",
+    "[field]": "[value]"
+  }
+}
+5.1.4 Dataset Specifications
+Total Volume:
+
+Minimum documents needed: [40-50]
+Document distribution by category:
+[Category 1]: [X] documents
+[Category 2]: [Y] documents
+[Category 3]: [Z] documents
+[etc.]
+Content Characteristics:
+
+Average document length: [200-600] words
+Content style: [Formal/Informal/Technical/etc.]
+Domain terminology density: [How much jargon to include]
+Information overlap: [10-15% of documents should have related/overlapping info]
+Metadata Coverage:
+
+All documents must have: [list required metadata]
+Optional metadata: [list optional fields]
+Temporal range (if applicable): [date range for dated content]
+5.2 USER QUERY INPUT SPECIFICATION
+5.2.1 Query Categories
+Based on this use case, users will ask these types of questions:
+
+Category 1: [Name] (e.g., "Factual Lookup")
+
+Characteristics: [What makes this query type unique]
+Complexity: Low
+Expected answer format: [Brief/Detailed/List/etc.]
+Example queries:
+"[Specific example query]"
+"[Specific example query]"
+"[Specific example query]"
+Required retrieval: [1-2 documents]
+Processing approach: [Direct extraction vs synthesis]
+Category 2: [Name] (e.g., "Comparison/Analysis")
+
+Characteristics: [What makes this query type unique]
+Complexity: Medium
+Expected answer format: [Structured comparison/Pros-cons/etc.]
+Example queries:
+"[Specific example query]"
+"[Specific example query]"
+"[Specific example query]"
+Required retrieval: [2-4 documents]
+Processing approach: [Multi-document synthesis]
+Category 3: [Name] (e.g., "How-to/Process")
+
+Characteristics: [What makes this query type unique]
+Complexity: Medium-High
+Expected answer format: [Step-by-step/Procedural]
+Example queries:
+"[Specific example query]"
+"[Specific example query]"
+"[Specific example query]"
+Required retrieval: [1-3 documents]
+Processing approach: [Sequential extraction]
+Category 4: [Name] (e.g., "Troubleshooting/Problem-Solving")
+
+Characteristics: [What makes this query type unique]
+Complexity: High
+Expected answer format: [Diagnostic/Solution-oriented]
+Example queries:
+"[Specific example query]"
+"[Specific example query]"
+"[Specific example query]"
+Required retrieval: [Multiple documents + edge cases]
+Processing approach: [Conditional logic/Decision tree]
+[Add more categories as relevant to your use case]
+
+5.2.2 Query Input Schema
+TypeScript
+interface UserQuery {
+  query: string;              // The actual question (required)
+  filters?: {                 // Optional metadata filters
+    category?: string[];      // Filter by document category
+    date_range?: {            // Filter by date (if applicable)
+      start: string;
+      end: string;
+    };
+    [key: string]: any;       // Other domain-specific filters
+  };
+  options?: {
+    num_results?: number;     // How many sources to return (default: 5)
+    detail_level?: "brief" | "detailed" | "comprehensive";
+    include_examples?: boolean;
+    language?: string;        // If multilingual
+  };
+  conversation_id?: string;   // For multi-turn conversations
+  previous_context?: string[];// Previous messages in conversation
+}
+5.2.3 Query Complexity Distribution
+For testing and demo, prepare queries in this distribution:
+
+Complexity	% of Queries	Avg Words	Sources Needed	Example
+Simple	30%	5-10	1-2	"[simple query example]"
+Medium	50%	10-20	2-4	"[medium query example]"
+Complex	15%	20-40	3-5	"[complex query example]"
+Message interrupted
+Copilot was interrupted before it could finish this message.
+You said: give me all the prompts one by
+give me all the prompts one by one in a step by step order for a winning strategy
+Message interrupted
+Copilot was interrupted before it could finish this message.
+You said: give me all the prompt one after
+give me all the prompt one after anotrher to execute in step by step for winning strategy
